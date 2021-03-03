@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- Dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  >Features</a
+                >
+                <!-- Dropdown list -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Option 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Option 2</a>
+                  </li>
+                  <!-- Dropdown menu -->
+                  <li class="dropdown-submenu">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="optionDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Option 3</a
+                    >
+                    <!-- Dropdown list -->
+                    <ul class="dropdown-menu" aria-labelledby="optionDropdown">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Demo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+              </li>
+              <div class="v-divider d-none d-lg-block"></div>
+              <div>
+                <button class="btn btn-success btn-inline" type="button"><i class="bi bi-person"></i> Sign in</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 align-self-center d-flex justify-content-center">
+              <div>
+                <p style="color: white">Join the change</p>
+                <h1 class="lh-base display-2" style="color: white">
+                  Space service<br />
+                  that moves <br />
+                  work forward
+                </h1>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 align-self-center d-flex justify-content-center">
+              <div class="card" style="width: 26rem; height: 28rem">
+                <form class="p-5 align-center">
+                  <div class="mb-4">
+                    <h4>Get started for free</h4>
+                  </div>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Enter your username" />
+                  </div>
+                  <div class="mb-4">
+                    <input type="e-mail" class="form-control" placeholder="Enter your email address" />
+                  </div>
+                  <div class="mb-4">
+                    <input type="password" class="form-control" placeholder="Enter your password" />
+                  </div>
+                  <button class="btn btn-success form-button">Get Started</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #f6f9fc">
+        <div class="container py-5">
+          <div class="row p-5">
+            <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-self-center text-center">
+              <p style="color: #373f50" class="font width25 display-6">Even More <span class="bold">Mobile Friendly</span> Interface</p>
+              <p class="h5 font width48 text-muted secondary-heading pb-4">
+                New Toolbar designed specificaly for handheld devices to further improve user experience
+              </p>
+              <p class="h6 font text-center pb-4">Scan QR code below to test on your device:</p>
+              <img src="./assets/qr-1614808148207.png" alt="" class="img-fluid mx-auto d-block" style="max-width: 100px" />
+            </div>
+            <div class="col-sm-12 col-md-6 my-sm-5">
+              <img src="./assets/undraw_Mobile_app_re_catg.svg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
