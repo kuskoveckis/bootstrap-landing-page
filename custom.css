@@ -1,3 +1,28 @@
+/* typography */
+.font {
+  font-family: "Rubik", "sans-serif";
+}
+
+/* general styling*/
+a:hover {
+  color: rgb(163, 163, 163) !important;
+}
+.bold {
+  font-weight: 900;
+}
+.width25 {
+  max-width: 25ch;
+}
+.width48 {
+  max-width: 48ch;
+}
+.background-color {
+  background-image: linear-gradient(-225deg, #473b7b 0%, #3584a7 51%, #30d2be 100%);
+}
+.opacity {
+  opacity: 0;
+}
+/* nav */
 .v-divider::before {
   content: "";
   display: flex;
@@ -8,21 +33,46 @@
 }
 .navbar {
   background-color: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
-.nav-link,
+.whiteNav {
+  background-color: white;
+  box-shadow: 0 8px 15px -15px;
+}
+
 .navbar-brand {
+  background-color: white;
+  color: black;
+  padding: 0.3em;
+  margin-left: 0.5em;
+  border-top-right-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+.nav-link {
+  color: white !important;
+}
+.navbar-brand-black {
+  background-color: black;
   color: white !important;
 }
 .dropdown-menu {
-  background-color: transparent !important;
+  background-color: transparent;
 }
-/* .dropdown-menu .nav-link {
+.navbar-toggler {
+  background-color: white;
+}
+.black {
   color: black !important;
-} */
+}
+
+/* banner */
 .test {
   margin-top: 150px;
 }
-
 .banner {
   background-image: url(./assets/tunnel-4276025_1920.jpg);
   background-size: cover;
@@ -33,36 +83,108 @@
   justify-content: center;
   align-items: start;
 }
-
 .form-button {
   width: 100%;
 }
 
-.navbar-toggler {
-  color: white !important;
+/* pricing cards */
+.card-btn {
+  width: 100%;
+  background-color: #796eff;
+  color: white;
+}
+.card-btn:hover {
+  background-color: #9289f3;
+  color: white;
+}
+.card-btn-main:hover {
+  background-color: rgb(228, 226, 226) !important;
+}
+
+/* footer */
+.footer-brand {
   background-color: white;
+  display: inline-block;
+  color: black;
+  padding: 0.3em;
+  margin-left: 0.5em;
+  border-top-right-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
 }
 
-.bold {
-  font-weight: 900;
+/* animations */
+.right[data-scroll] {
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.right[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.right[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+  -moz-transform: translateX(-80px);
+  -ms-transform: translateX(-80px);
+  -o-transform: translateX(-80px);
 }
 
-.font {
-  font-family: "Rubik", "sans-serif";
+.left[data-scroll] {
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.left[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.left[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(80px);
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  -o-transform: translateX(80px);
+}
+.up[data-scroll] {
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+}
+.up[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.up[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
 }
 
-.width25 {
-  max-width: 25ch;
-}
-
-.width48 {
-  max-width: 48ch;
-}
-
-.background-color {
-  background-image: linear-gradient(-225deg, #473b7b 0%, #3584a7 51%, #30d2be 100%);
-}
-
+/* responsive */
 @media only screen and (max-width: 576px) {
   .banner {
     height: 970px;
@@ -72,5 +194,14 @@
   }
   .font {
     max-width: 50ch;
+  }
+  .paddingT {
+    padding-top: 80px;
+  }
+  .paddingB {
+    padding-bottom: 80px;
+  }
+  .footer-brand {
+    margin-top: 3em;
   }
 }

@@ -1,32 +1,29 @@
-anime({
-  targets: ".test-left",
-  translateX: [200, 0],
-  autoplay: true,
-  opacity: [0, 1],
-  easing: "easeInOutSine",
+const navbar = document.querySelector(".navbar");
+const navBrand = document.querySelector(".navbar-brand");
+const navLink = document.querySelectorAll(".nav-link");
+const dropDownMenu = document.querySelector(".dropdown-menu");
+
+let navbarHeight = navbar.getBoundingClientRect().height;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navbarHeight) {
+    navbar.classList.add("whiteNav");
+    navBrand.classList.add("navbar-brand-black");
+    navLink.forEach((link) => {
+      link.classList.add("black");
+    });
+    dropDownMenu.classList.add("bg-white");
+  } else if (window.scrollY <= navbarHeight) {
+    navbar.classList.remove("whiteNav");
+    navBrand.classList.remove("navbar-brand-black");
+    navLink.forEach((link) => {
+      link.classList.remove("black");
+    });
+    dropDownMenu.classList.remove("bg-white");
+  }
 });
 
-anime({
-  targets: ".test-right",
-  translateX: [-200, 0],
-  autoplay: true,
-  opacity: [0, 1],
-  easing: "easeInOutSine",
-});
-
-anime({
-  targets: ".test-up",
-  translateY: [50, 0],
-  autoplay: true,
-  opacity: [0, 1],
-  easing: "easeInOutSine",
-});
-
-anime({
-  targets: ".test-up-delay",
-  translateY: [80, 0],
-  autoplay: true,
-  opacity: [0, 1],
-  delay: 200,
-  easing: "easeInOutSine",
+ScrollOut({
+  targets: [".left", ".right", ".up"],
+  once: true,
 });
